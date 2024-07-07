@@ -5,9 +5,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-investr-feeds
 
 Home: https://github.com/bgreenwell/investr
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
-Summary: Functions to facilitate inverse estimation (e.g., calibration) in linear, generalized linear, nonlinear, and (linear) mixed-effects models. A generic function is also provided for plotting fitted regression models with or without confidence/prediction bands that may be of use to the general user.
+Summary: Functions to facilitate inverse estimation (e.g., calibration) in linear, generalized linear, nonlinear, and (linear) mixed-effects models. A generic function is also provided for plotting fitted regression models with or without confidence/prediction bands that may be of use to the general user. For a general overview of these methods, see Greenwell and Schubert Kabban (2014) <doi:10.32614/RJ-2014-009>.
 
 Current build status
 ====================
@@ -95,7 +95,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance

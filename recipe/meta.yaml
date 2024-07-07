@@ -1,6 +1,5 @@
 {% set version = "1.4.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-investr
@@ -13,8 +12,7 @@ source:
   sha256: 2a07537777b95370f574b597e1d97279cd700ec9d17d2bad8a1c8ef846dc198a
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,10 +35,15 @@ test:
 
 about:
   home: https://github.com/bgreenwell/investr
-  license: GPL (>= 2)
-  summary: Functions to facilitate inverse estimation (e.g., calibration) in linear, generalized linear, nonlinear, and (linear) mixed-effects models. A generic function is also provided for plotting fitted regression models with or without confidence/prediction bands that may be of use to the general user.
+  license: GPL-2.0-or-later
+  summary: Functions to facilitate inverse estimation (e.g., calibration) in linear, generalized
+    linear, nonlinear, and (linear) mixed-effects models. A generic function is also
+    provided for plotting fitted regression models with or without confidence/prediction
+    bands that may be of use to the general user. For a general overview of these methods,
+    see Greenwell and Schubert Kabban (2014) <doi:10.32614/RJ-2014-009>.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
